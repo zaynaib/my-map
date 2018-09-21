@@ -5,22 +5,13 @@ import L from 'leaflet'
 
 class SimpleMap extends Component{
   componentDidMount(){
-    //this.map = L.map('mapid').setView([51.505, -0.09], 13);
-    this.map = L.map('mapid', {
-      center: [51.505, -0.09],
-      zoom: 16,
-      layers: [
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        }),
-      ]
-    });
+   
     
   }
   render(){
     const position = [51.505, -0.09]
     return(
-      /*
+      
       <div id="map">
   <Map center={position} zoom={13}>
     <TileLayer
@@ -34,8 +25,7 @@ class SimpleMap extends Component{
 
     
      </div>
-     */
-    <div className="map"></div>
+    
     )
   }
 
